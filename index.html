@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script defer src="/assets/js/app.js"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Calculatrice Vue JS</title>
+</head>
+<body>
+
+<div id="app">
+  <input type="text" v-model="expression" disabled>
+  <br>
+  <button v-for="button in buttons" :key="button" @click="appendToExpression(button)">
+    {{ button }}
+  </button>
+  <br>
+  <button @click="calculateResult">=</button>
+  <button @click="clearExpression">C</button>
+</div>
+</body>
+</html>

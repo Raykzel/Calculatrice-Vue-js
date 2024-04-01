@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#app {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 10px;
+  background-color: green;
+  color: yellow;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
